@@ -194,10 +194,17 @@ function App() {
             </button>
             <button
               onClick={() => scrollToSection('contact')}
-              className="btn-secondary text-green-400 px-6 sm:px-8 py-2 sm:py-3 rounded-lg font-semibold text-sm sm:text-base button-mobile button-sm button-md button-lg button-xl"
+              className="btn-secondary text-emerald-400 px-6 sm:px-8 py-2 sm:py-3 rounded-lg font-semibold text-sm sm:text-base button-mobile button-sm button-md button-lg button-xl"
             >
               Get In Touch
             </button>
+            <a
+              href="/cv/Eshan_Madushanka_CV.pdf"
+              download="Eshan_Madushanka_CV.pdf"
+              className="bg-white/10 backdrop-blur-md border border-white/20 text-white hover:bg-white/20 hover:border-white/30 px-6 sm:px-8 py-2 sm:py-3 rounded-lg font-semibold text-sm sm:text-base transition-all duration-300 hover-lift text-center button-mobile button-sm button-md button-lg button-xl"
+            >
+              Download CV
+            </a>
           </div>
         </div>
       </section>
@@ -386,8 +393,31 @@ function App() {
             </a>
           </div>
 
+          {/* CV Download Section */}
+          <div className="bg-white/10 backdrop-blur-md border border-white/20 p-6 sm:p-8 rounded-xl hover-lift glass card-mobile card-sm card-md card-lg card-xl mb-8">
+            <div className="text-center">
+              <div className="text-4xl sm:text-5xl mb-4">📄</div>
+              <h3 className="text-xl sm:text-2xl font-bold mb-4 bg-gradient-to-r from-emerald-400 to-emerald-500 bg-clip-text text-transparent">
+                Download My CV
+              </h3>
+              <p className="text-sm sm:text-base text-gray-300 mb-6">
+                Get a detailed overview of my experience, skills, and qualifications in PDF format.
+              </p>
+              <a
+                href="/cv/Eshan_Madushanka_CV.pdf"
+                download="Eshan_Madushanka_CV.pdf"
+                className="inline-flex items-center gap-2 bg-emerald-500 hover:bg-emerald-600 text-white px-8 py-3 rounded-lg font-semibold text-sm sm:text-base transition-all duration-300 hover-lift"
+              >
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                </svg>
+                Download CV (PDF)
+              </a>
+            </div>
+          </div>
+
           <div className="bg-white/10 backdrop-blur-md border border-white/20 p-6 sm:p-8 rounded-xl hover-lift glass card-mobile card-sm card-md card-lg card-xl">
-            <h3 className="text-xl sm:text-2xl font-bold mb-4 sm:mb-6 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">Let's Work Together</h3>
+            <h3 className="text-xl sm:text-2xl font-bold mb-4 sm:mb-6 bg-gradient-to-r from-emerald-400 to-emerald-500 bg-clip-text text-transparent">Let's Work Together</h3>
             <p className="text-sm sm:text-base text-gray-300 mb-4 sm:mb-6">
               I'm currently available for freelance work and full-time opportunities.
             </p>
@@ -414,12 +444,19 @@ function App() {
               <p className="text-gray-300 text-sm sm:text-base leading-relaxed mb-4">
                 Data Analyst & MERN Stack Developer passionate about creating innovative solutions and transforming data into actionable insights.
               </p>
-              <div className="flex justify-center md:justify-start space-x-4">
+              <div className="flex flex-col space-y-2">
                 <a
                   href="mailto:eshanmadushanka273@gmail.com"
                   className="text-emerald-400 hover:text-emerald-300 transition-colors text-sm"
                 >
                   📧 eshanmadushanka273@gmail.com
+                </a>
+                <a
+                  href="/cv/Eshan_Madushanka_CV.pdf"
+                  download="Eshan_Madushanka_CV.pdf"
+                  className="text-emerald-400 hover:text-emerald-300 transition-colors text-sm flex items-center gap-1"
+                >
+                  📄 Download CV
                 </a>
               </div>
             </div>
